@@ -1,0 +1,91 @@
+# Day 03 - Network Configuration and HTTP Traffic Analysis
+
+## Objective
+
+To understand NAT and Bridged networking modes and capture HTTP traffic using Wireshark.
+
+---
+
+# Assignment 6
+
+## Change Network from NAT to Bridged and Compare Ping Results
+
+### Aim
+
+To observe differences between NAT and Bridged networking.
+
+### NAT Mode
+
+* VM receives private IP.
+* Internet access through host machine.
+* Hidden from local network.
+
+### Bridged Mode
+
+* VM receives IP from router.
+* Appears as separate device on network.
+* Direct communication with local network.
+
+### Ping Comparison
+
+| Feature        | NAT        | Bridged     |
+| -------------- | ---------- | ----------- |
+| IP Source      | VMware NAT | Router DHCP |
+| Visible on LAN | No         | Yes         |
+| Direct Access  | Limited    | Full        |
+
+### Observation
+
+Bridged networking provides direct LAN connectivity while NAT provides isolation.
+
+### Result
+
+Successfully changed network adapter and observed connectivity differences.
+
+---
+
+# Assignment 7
+
+## Capture HTTP Login Traffic Using Wireshark
+
+### Aim
+
+To capture HTTP traffic from a vulnerable web application.
+
+### Website Used
+
+Example:
+
+```text
+http://testphp.vulnweb.com
+```
+
+### Procedure
+
+1. Start Wireshark.
+2. Open vulnerable HTTP website.
+3. Navigate to login page.
+4. Apply filter:
+
+```text
+http
+```
+
+5. Capture packets.
+6. Analyze HTTP requests and responses.
+
+### Observation
+
+HTTP traffic is transmitted in plaintext and can be viewed using packet analysis tools.
+
+### Result
+
+Successfully captured and analyzed HTTP packets.
+
+## Learning Outcome
+
+* Learned NAT and Bridged networking.
+* Understood IP allocation methods.
+* Captured HTTP traffic.
+* Improved packet analysis skills.
+* Understood risks of unencrypted communication.
