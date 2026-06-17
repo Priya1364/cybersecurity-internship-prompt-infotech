@@ -1,0 +1,98 @@
+# Day 02 - DNS, ICMP Analysis and Google Dorking
+
+## Objective
+
+To understand DNS resolution, ICMP communication, and information gathering techniques.
+
+---
+
+# Assignment 4
+
+## Capture DNS and ICMP Packets Using Wireshark
+
+### Aim
+
+To capture DNS and ICMP packets while accessing websites.
+
+### Websites Used
+
+1. google.com
+2. wikipedia.org
+
+### DNS Capture
+
+Filter:
+
+```text
+dns
+```
+
+### ICMP Capture
+
+Filter:
+
+```text
+icmp
+```
+
+### Procedure
+
+1. Start Wireshark.
+2. Apply DNS filter.
+3. Visit websites.
+4. Observe DNS query and response packets.
+5. Open terminal.
+6. Ping websites.
+7. Capture ICMP Echo Request and Echo Reply packets.
+
+### Observation
+
+* DNS translated domain names into IP addresses.
+* ICMP packets verified network connectivity.
+
+### Result
+
+Successfully captured DNS and ICMP packets.
+
+---
+
+# Assignment 5
+
+## Information Gathering Using Google Dorks
+
+### Aim
+
+To understand how search operators can assist in information gathering.
+
+### Sample Google Dorks
+
+```text
+site:gov.in
+```
+
+```text
+site:ac.in
+```
+
+```text
+site:nic.in
+```
+
+```text
+site:gov.in filetype:pdf
+```
+
+```text
+site:gov.in inurl:login
+```
+
+### Observation
+
+Google Dorks help discover publicly available information indexed by search engines.
+
+### Learning Outcome
+
+* Learned DNS packet analysis.
+* Learned ICMP packet analysis.
+* Understood information gathering concepts.
+* Improved Wireshark skills.
