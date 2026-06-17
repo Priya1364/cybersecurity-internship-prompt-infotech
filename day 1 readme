@@ -1,0 +1,111 @@
+# Day 01 - Network Fundamentals and Packet Analysis
+
+## Objective
+
+The objective of Day 1 was to understand basic network communication, analyze TCP connections, learn firewall-based port blocking, and study commonly used network protocols and port numbers.
+
+---
+
+# Assignment 1
+
+## Capture TCP Three-Way Handshake in Wireshark
+
+### Aim
+
+To capture and analyze the TCP Three-Way Handshake process using Wireshark.
+
+### Theory
+
+TCP establishes reliable communication using a three-step process:
+
+1. SYN
+2. SYN-ACK
+3. ACK
+
+### Procedure
+
+1. Open Wireshark.
+2. Select active network interface.
+3. Start packet capture.
+4. Open a website.
+5. Apply filter:
+
+```text
+tcp
+```
+
+6. Observe SYN, SYN-ACK and ACK packets.
+
+### Result
+
+Successfully captured and analyzed the TCP Three-Way Handshake process.
+
+---
+
+# Assignment 2
+
+## Block Port 80 and 443
+
+### Aim
+
+To block HTTP and HTTPS ports and observe browser behavior.
+
+### Ports Blocked
+
+| Port | Service |
+| ---- | ------- |
+| 80   | HTTP    |
+| 443  | HTTPS   |
+
+### Procedure
+
+1. Open Windows Firewall.
+2. Create outbound rule.
+3. Block Port 80.
+4. Block Port 443.
+5. Open browser.
+6. Attempt to access websites.
+
+### Observation
+
+Websites failed to load due to blocked web traffic ports.
+
+### Result
+
+Successfully blocked HTTP and HTTPS traffic.
+
+---
+
+# Assignment 3
+
+## Commonly Used Protocols and Port Numbers
+
+| Protocol    | Port |
+| ----------- | ---- |
+| FTP Data    | 20   |
+| FTP Control | 21   |
+| SSH         | 22   |
+| Telnet      | 23   |
+| SMTP        | 25   |
+| DNS         | 53   |
+| DHCP        | 67   |
+| DHCP Client | 68   |
+| HTTP        | 80   |
+| POP3        | 110  |
+| NTP         | 123  |
+| IMAP        | 143  |
+| SNMP        | 161  |
+| LDAP        | 389  |
+| HTTPS       | 443  |
+| SMB         | 445  |
+| SMTPS       | 465  |
+| RDP         | 3389 |
+| MySQL       | 3306 |
+| PostgreSQL  | 5432 |
+
+## Learning Outcome
+
+* Learned TCP communication.
+* Understood firewall rules.
+* Identified common networking ports.
+* Improved Wireshark packet analysis skills.
