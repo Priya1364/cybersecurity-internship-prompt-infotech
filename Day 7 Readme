@@ -1,0 +1,222 @@
+# Day 7 – Gobuster, Nikto and Demo Bug Report
+
+## Objective
+
+The objective of Day 7 was to learn how to perform **safe web application reconnaissance** using Gobuster and Nikto in a controlled laboratory environment. The activities focused on discovering hidden directories, identifying common web server misconfigurations, and documenting findings through a professional bug report.
+
+> **Note:** All testing was performed only on intentionally vulnerable applications (DVWA and Mutillidae) or authorized practice environments.
+
+---
+
+# Assignments
+
+## Assignment 1
+### Directory Enumeration using Gobuster on DVWA and Mutillidae
+
+## Assignment 2
+### Web Server Scanning using Nikto
+
+## Assignment 3
+### Create a Demo Bug Report
+
+---
+
+# Assignment 1 – Gobuster Directory Enumeration
+
+## Description
+
+Gobuster is a directory and file brute-forcing tool used to discover hidden directories and files on web servers. It is commonly used during the reconnaissance phase of a penetration test.
+
+---
+
+## Target Applications
+
+- DVWA (Damn Vulnerable Web Application)
+- Mutillidae II
+
+---
+
+## Procedure
+
+1. Start the vulnerable web application.
+2. Open the Kali Linux terminal.
+3. Verify that the target website is accessible.
+4. Run Gobuster with a wordlist.
+5. Observe the discovered directories and files.
+
+---
+
+## Sample Commands
+
+### DVWA
+
+```bash
+gobuster dir -u http://<target-ip>/dvwa/ -w /usr/share/wordlists/dirb/common.txt
+```
+
+### Mutillidae
+
+```bash
+gobuster dir -u http://<target-ip>/mutillidae/ -w /usr/share/wordlists/dirb/common.txt
+```
+
+---
+
+## Observation
+
+Gobuster successfully identified publicly accessible directories and files available on the target applications.
+
+Examples include:
+
+- login
+- admin
+- images
+- css
+- javascript
+- uploads
+
+*(Actual results depend on the configured lab environment.)*
+
+---
+
+## Learning Outcome
+
+- Learned directory enumeration techniques.
+- Understood how hidden resources can be discovered.
+- Practiced using Gobuster in a controlled environment.
+
+---
+
+# Assignment 2 – Nikto Web Server Scan
+
+## Description
+
+Nikto is an open-source web server scanner that checks for common vulnerabilities, insecure configurations, outdated software, and potentially dangerous files.
+
+---
+
+## Procedure
+
+1. Open the Kali Linux terminal.
+2. Verify the target website is running.
+3. Execute a Nikto scan.
+4. Review the generated findings.
+
+---
+
+## Sample Command
+
+```bash
+nikto -h http://<target-ip>
+```
+
+---
+
+## Information Collected
+
+Nikto checks for:
+
+- Server information
+- Missing security headers
+- Default files
+- Directory indexing
+- Outdated software versions
+- Common web server misconfigurations
+
+---
+
+## Learning Outcome
+
+- Learned the basics of automated web server scanning.
+- Understood common web server security issues.
+- Practiced interpreting scan results.
+
+---
+
+# Assignment 3 – Demo Bug Report
+
+## Description
+
+After completing reconnaissance, a sample bug report was prepared to document the identified issue in a professional format.
+
+---
+
+## Sample Bug Report
+
+### Bug Title
+
+Directory Listing Enabled on Web Server
+
+### Severity
+
+Low
+
+### Target
+
+Practice Web Application (DVWA Lab)
+
+### Description
+
+Directory listing was enabled on the web server, allowing users to view the contents of directories without authentication.
+
+### Steps to Reproduce
+
+1. Open the target website.
+2. Navigate to the identified directory.
+3. Observe that directory contents are displayed.
+
+### Expected Result
+
+Directory listing should be disabled, and unauthorized users should not be able to browse directory contents.
+
+### Actual Result
+
+Directory contents were publicly accessible.
+
+### Impact
+
+- Information disclosure
+- Exposure of application structure
+- Increased reconnaissance opportunities for attackers
+
+### Recommendation
+
+- Disable directory listing.
+- Restrict access to sensitive directories.
+- Follow secure web server configuration guidelines.
+
+---
+
+# Tools Used
+
+- Kali Linux
+- Gobuster
+- Nikto
+- DVWA
+- Mutillidae II
+- Linux Terminal
+
+---
+
+# Skills Learned
+
+- Directory Enumeration
+- Web Server Reconnaissance
+- Vulnerability Identification
+- Web Security Basics
+- Bug Reporting
+- Kali Linux Commands
+
+---
+
+# Screenshots
+
+All screenshots related to Day 7 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 7, I learned how to perform safe web application reconnaissance using Gobuster and Nikto in a controlled laboratory environment. I practiced discovering publicly accessible directories, identifying common web server misconfigurations, and documenting findings in a professional bug report. These activities strengthened my understanding of the reconnaissance phase of web application security assessments and improved my technical documentation skills.
