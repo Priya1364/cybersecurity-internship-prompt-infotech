@@ -1,0 +1,177 @@
+# Day 13 – AbuseIPDB Integration and n8n Email Automation
+
+## Objective
+
+The objective of Day 13 was to understand how to use **AbuseIPDB** for IP reputation analysis and build an automated workflow in **n8n** that checks an IP address and sends a customized email notification when the Abuse Confidence Score is greater than 50.
+
+> **Ethical Use Notice**
+>
+> All activities were performed in a controlled environment using publicly available IP reputation data and personal test email accounts for educational purposes only.
+
+---
+
+# Assignment
+
+## Build an n8n Workflow with AbuseIPDB and Email Notification
+
+### Task
+
+Create an automated workflow that:
+
+- Accepts an IP address as input.
+- Queries the AbuseIPDB API.
+- Checks the Abuse Confidence Score.
+- Sends a customized email if the score is greater than **50**.
+
+---
+
+# Description
+
+**AbuseIPDB** is a threat intelligence platform that collects reports of malicious IP addresses from security researchers and organizations worldwide. It helps identify suspicious IP addresses involved in activities such as spam, brute-force attacks, malware distribution, and network abuse.
+
+**n8n** is an open-source workflow automation platform that connects multiple services and automates repetitive tasks without requiring extensive programming.
+
+---
+
+# Workflow Design
+
+```
+Manual Trigger
+       │
+       ▼
+HTTP Request (AbuseIPDB API)
+       │
+       ▼
+Check Abuse Confidence Score
+       │
+       ▼
+ IF Score > 50
+       │
+ ┌─────┴─────┐
+ │           │
+ ▼           ▼
+Send Email   End Workflow
+```
+
+---
+
+# Procedure
+
+## Step 1 – Create a New Workflow
+
+1. Open n8n.
+2. Create a new workflow.
+
+---
+
+## Step 2 – Add Manual Trigger
+
+- Add the **Manual Trigger** node.
+- This node starts the workflow manually for testing.
+
+---
+
+## Step 3 – Add HTTP Request Node
+
+Configure the HTTP Request node to query the AbuseIPDB API.
+
+The request retrieves information about the specified IP address, including its Abuse Confidence Score.
+
+---
+
+## Step 4 – Add IF Node
+
+Configure the IF node to evaluate the API response.
+
+Condition:
+
+```
+Abuse Confidence Score > 50
+```
+
+---
+
+## Step 5 – Add Email Node
+
+If the condition is true:
+
+- Add an Email (SMTP/Gmail) node.
+- Configure sender and recipient details.
+- Create a customized email message.
+
+Example Email Content:
+
+```
+Subject:
+High-Risk IP Address Detected
+
+Message:
+
+A potentially malicious IP address has been detected.
+
+Abuse Confidence Score: Greater than 50
+
+Please review this IP address for further investigation.
+```
+
+---
+
+## Step 6 – Execute the Workflow
+
+1. Start the workflow.
+2. Enter a test IP address.
+3. Review the API response.
+4. Verify whether the email notification is triggered based on the score.
+
+---
+
+# Observation
+
+- Successfully retrieved IP reputation information from AbuseIPDB.
+- The IF node correctly evaluated the Abuse Confidence Score.
+- When the score exceeded 50, the workflow automatically generated and sent the customized email notification.
+- Lower scores did not trigger an email.
+
+---
+
+# Learning Outcome
+
+- Understood how IP reputation services work.
+- Learned how to integrate APIs with workflow automation.
+- Gained experience using conditional logic in n8n.
+- Practiced automated email notifications for security monitoring.
+
+---
+
+# Tools Used
+
+- n8n
+- AbuseIPDB API
+- Gmail / SMTP Email
+- Web Browser
+
+---
+
+# Skills Learned
+
+- Threat Intelligence
+- IP Reputation Analysis
+- Workflow Automation
+- API Integration
+- Conditional Logic
+- Email Automation
+- Security Monitoring
+
+---
+
+# Screenshots
+
+All screenshots related to Day 13 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 13, I built an automated security workflow using n8n and AbuseIPDB. The workflow checked the reputation of an IP address through the AbuseIPDB API and automatically sent a customized email notification whenever the Abuse Confidence Score exceeded 50. This exercise enhanced my understanding of threat intelligence, API integration, workflow automation, and automated alerting, which are valuable skills for Security Operations Center (SOC) analysts and cybersecurity professionals.
