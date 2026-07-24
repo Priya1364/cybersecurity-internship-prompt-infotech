@@ -1,0 +1,273 @@
+# Day 4 – Linux File System Troubleshooting Case Study
+
+## Objective
+
+The objective of Day 4 was to develop Linux troubleshooting skills by investigating a failed automated backup script. The task involved navigating the Linux file system, examining log files, identifying the root cause of the failure, correcting file permissions, and verifying that the backup process worked successfully.
+
+---
+
+# Case Study
+
+## Scenario: The Broken Automation Script
+
+You are a **Junior System Administrator** in a company.
+
+An automated backup script named **backup.sh** is scheduled to run every night. The script is responsible for creating a backup of the web server configuration files and saving the backup to a specific directory.
+
+However, the system logs indicate that the backup process failed during the previous night's execution.
+
+Your task is to:
+
+- Navigate through the Linux file system.
+- Locate the backup script.
+- Examine system logs.
+- Identify the cause of the failure.
+- Correct the required file permissions or ownership.
+- Verify that the backup script executes successfully.
+
+---
+
+# Problem Statement
+
+The scheduled backup did not complete successfully because of incorrect file properties and permissions.
+
+The objective was to investigate the issue and restore the backup process.
+
+---
+
+# Procedure
+
+## Step 1 – Open Terminal
+
+Launch the Linux terminal.
+
+---
+
+## Step 2 – Navigate to the Backup Directory
+
+Example:
+
+```bash
+cd /home/user/backup
+```
+
+or
+
+```bash
+cd /opt/scripts
+```
+
+---
+
+## Step 3 – List Files
+
+```bash
+ls -l
+```
+
+This command displays:
+
+- File permissions
+- Owner
+- Group
+- File size
+- Last modified date
+
+---
+
+## Step 4 – Check the Backup Script
+
+```bash
+cat backup.sh
+```
+
+or
+
+```bash
+nano backup.sh
+```
+
+Verified the commands used inside the script.
+
+---
+
+## Step 5 – Check File Permissions
+
+```bash
+ls -l backup.sh
+```
+
+Example output:
+
+```bash
+-rw-r--r--
+```
+
+Observation:
+
+The script did not have executable permission.
+
+---
+
+## Step 6 – Make the Script Executable
+
+```bash
+chmod +x backup.sh
+```
+
+Verify:
+
+```bash
+ls -l
+```
+
+Example output:
+
+```bash
+-rwxr-xr-x
+```
+
+---
+
+## Step 7 – Check File Ownership
+
+```bash
+ls -l
+```
+
+If necessary:
+
+```bash
+sudo chown username:username backup.sh
+```
+
+---
+
+## Step 8 – Check System Logs
+
+Example:
+
+```bash
+cat /var/log/syslog
+```
+
+or
+
+```bash
+journalctl
+```
+
+or
+
+```bash
+grep backup /var/log/syslog
+```
+
+Observed log entries related to the failed backup.
+
+---
+
+## Step 9 – Execute the Script
+
+```bash
+./backup.sh
+```
+
+Observed whether the backup completed successfully.
+
+---
+
+## Step 10 – Verify Backup File
+
+Navigate to the backup directory.
+
+```bash
+ls
+```
+
+Confirmed that the backup archive was successfully created.
+
+---
+
+# Commands Used
+
+```bash
+pwd
+
+cd
+
+ls
+
+ls -l
+
+cat
+
+nano
+
+chmod +x
+
+chown
+
+grep
+
+journalctl
+
+./backup.sh
+```
+
+---
+
+# Observation
+
+- Located the backup script.
+- Verified file permissions.
+- Found that the script lacked execute permission.
+- Corrected file permissions using `chmod +x`.
+- Verified ownership.
+- Reviewed system logs for error messages.
+- Successfully executed the backup script.
+- Confirmed that the backup file was created.
+
+---
+
+# Root Cause
+
+The backup failed because the script did not have the required executable permission.
+
+After assigning execute permission, the backup completed successfully.
+
+---
+
+# Skills Learned
+
+- Linux File System Navigation
+- File Permissions
+- File Ownership
+- Linux Commands
+- Log Analysis
+- Script Execution
+- Linux Troubleshooting
+- System Administration Basics
+
+---
+
+# Tools Used
+
+- Kali Linux / Ubuntu Linux
+- Linux Terminal
+- Text Editor (Nano)
+- System Logs
+
+---
+
+# Screenshots
+
+All screenshots related to Day 4 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 4, I solved a practical Linux troubleshooting case study involving a failed automated backup script. By navigating the Linux file system, examining file permissions, reviewing system logs, and correcting the script's execution permission, I successfully restored the backup process. This exercise improved my understanding of Linux administration, file permissions, log analysis, and real-world troubleshooting techniques that are essential for cybersecurity and system administration roles.
