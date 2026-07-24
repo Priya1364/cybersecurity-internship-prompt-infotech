@@ -1,0 +1,154 @@
+# Day 14 – Login Traffic Analysis and SQL Injection Security Testing
+
+## Objective
+
+The objective of Day 14 was to understand how login requests are transmitted over a network, analyze HTTP traffic using **Burp Suite** in a controlled lab environment, and study **SQL Injection** behavior in different security levels of **DVWA (Damn Vulnerable Web Application)**. The exercises focused on defensive learning, request analysis, and understanding how secure coding practices help prevent common web vulnerabilities.
+
+> **Ethical Use Notice**
+>
+> All activities were performed only in an isolated virtual laboratory using DVWA and other intentionally vulnerable applications. No testing was conducted against public or unauthorized systems.
+
+---
+
+# Assignments
+
+## Assignment 1
+### Analyze Login Traffic Using Burp Suite
+
+## Assignment 2
+### Study SQL Injection at Medium and High Security Levels in DVWA
+
+---
+
+# Assignment 1 – Login Traffic Analysis
+
+## Description
+
+Burp Suite is a web application security testing tool that acts as an intercepting proxy between a web browser and a web server. It allows security professionals to inspect HTTP requests and responses for learning, debugging, and authorized security testing.
+
+---
+
+## Procedure
+
+1. Start DVWA or another intentionally vulnerable web application.
+2. Launch Burp Suite.
+3. Configure the browser to use Burp Suite as the proxy.
+4. Enable **Intercept** mode.
+5. Open the application's login page.
+6. Enter sample test credentials.
+7. Observe the intercepted HTTP request.
+8. Forward the request to the server.
+9. Review the HTTP response returned by the application.
+
+---
+
+## Information Observed
+
+The intercepted request included information such as:
+
+- Request Method (GET/POST)
+- Requested URL
+- HTTP Headers
+- Form Parameters
+- Cookies
+- Server Response
+- HTTP Status Code
+
+---
+
+## Observation
+
+- Burp Suite successfully intercepted the login request.
+- HTTP requests and responses could be viewed before reaching the server.
+- The exercise demonstrated how security professionals analyze web traffic during authorized assessments.
+
+---
+
+## Learning Outcome
+
+- Understood how HTTP requests travel between client and server.
+- Learned how to inspect HTTP requests and responses.
+- Improved knowledge of web application testing workflows.
+
+---
+
+# Assignment 2 – SQL Injection Analysis (DVWA)
+
+## Description
+
+SQL Injection is a web application vulnerability that occurs when user input is improperly handled, allowing malicious SQL commands to alter database queries. In this lab, the behavior of the **Medium** and **High** security levels in DVWA was studied to understand how additional security controls affect application behavior.
+
+---
+
+## Procedure
+
+1. Start DVWA in the virtual machine.
+2. Configure the security level to **Medium**.
+3. Observe the application's input validation and behavior.
+4. Repeat the process using the **High** security level.
+5. Compare how each security level handles user input.
+6. Record the observations.
+
+---
+
+## Observation
+
+### Medium Security
+
+- Additional input validation was present.
+- Exploitation became more difficult compared to the Low security level.
+- Improved filtering mechanisms were observed.
+
+### High Security
+
+- Stronger input validation and application controls were implemented.
+- The application significantly reduced the risk of SQL Injection.
+- Secure coding practices and defensive mechanisms made exploitation considerably more challenging.
+
+---
+
+## Mitigation Techniques Studied
+
+- Input Validation
+- Server-side Validation
+- Parameterized Queries (Prepared Statements)
+- Stored Procedures
+- Least Privilege Principle
+- Secure Error Handling
+- Web Application Firewall (WAF)
+
+---
+
+# Tools Used
+
+- Burp Suite Community Edition
+- DVWA
+- Kali Linux
+- Web Browser
+- Virtual Machine
+
+---
+
+# Skills Learned
+
+- HTTP Request Analysis
+- HTTP Response Analysis
+- Web Proxy Usage
+- Web Application Security
+- SQL Injection Awareness
+- Secure Coding Concepts
+- Defensive Security Testing
+
+---
+
+# Screenshots
+
+All screenshots related to Day 14 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 14, I learned how to inspect login requests and responses using Burp Suite in a controlled laboratory environment. I also studied the behavior of SQL Injection protections at the Medium and High security levels in DVWA, observing how stronger input validation and secure coding practices reduce the risk of exploitation. These activities improved my understanding of web application security, HTTP communication, and defensive testing methodologies used by cybersecurity professionals.
