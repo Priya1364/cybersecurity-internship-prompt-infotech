@@ -1,0 +1,189 @@
+# Day 10 – Domain Information Gathering Using WHOIS, DNSDumpster and crt.sh
+
+## Objective
+
+The objective of Day 10 was to learn passive information gathering techniques by collecting publicly available information about a target domain using **WHOIS**, **DNSDumpster**, and **crt.sh**. These tools help security professionals understand a domain's registration details, DNS infrastructure, and SSL/TLS certificate history.
+
+> **Ethical Use Notice**
+>
+> All activities were performed using publicly available information for educational purposes only. No unauthorized access or active attacks were conducted.
+
+---
+
+# Assignments
+
+## Assignment 1
+### Perform WHOIS Lookup on a Target Domain
+
+## Assignment 2
+### Gather Passive DNS Information Using DNSDumpster
+
+## Assignment 3
+### Find SSL Certificate Details Using crt.sh
+
+---
+
+# Assignment 1 – WHOIS Lookup
+
+## Description
+
+WHOIS is a protocol used to retrieve domain registration information. It provides details about the domain registrar, registration dates, name servers, and registration status.
+
+---
+
+## Procedure
+
+1. Open a WHOIS lookup service or use the terminal.
+2. Enter the target domain.
+3. Review the registration details.
+4. Record the available public information.
+
+---
+
+## Sample Command (Kali Linux)
+
+```bash
+whois example.com
+```
+
+---
+
+## Information Collected
+
+- Domain Name
+- Registrar
+- Registration Date
+- Expiry Date
+- Last Updated Date
+- Name Servers
+- Domain Status
+- DNSSEC Information (if available)
+
+---
+
+## Learning Outcome
+
+- Understood domain registration information.
+- Learned how WHOIS supports reconnaissance activities.
+- Practiced using the WHOIS command in Kali Linux.
+
+---
+
+# Assignment 2 – DNSDumpster
+
+## Description
+
+DNSDumpster is a free online reconnaissance tool that collects passive DNS information about a domain. It helps visualize the domain's infrastructure without directly interacting with the target.
+
+---
+
+## Procedure
+
+1. Open the DNSDumpster website.
+2. Enter the target domain.
+3. Start the search.
+4. Review the generated DNS report.
+
+---
+
+## Information Gathered
+
+- DNS Records
+- Subdomains
+- Name Servers (NS)
+- Mail Servers (MX)
+- Host Records
+- IP Addresses
+- DNS Map
+
+---
+
+## Observation
+
+DNSDumpster displayed the publicly available DNS infrastructure and relationships between different domain components using a graphical network map.
+
+---
+
+## Learning Outcome
+
+- Learned passive DNS enumeration.
+- Understood domain infrastructure mapping.
+- Identified publicly available DNS records.
+
+---
+
+# Assignment 3 – SSL Certificate Analysis Using crt.sh
+
+## Description
+
+crt.sh is an online certificate transparency search engine that allows users to view publicly issued SSL/TLS certificates for a domain.
+
+---
+
+## Procedure
+
+1. Open the crt.sh website.
+2. Enter the target domain.
+3. Search for issued certificates.
+4. Review the certificate information.
+
+---
+
+## Information Collected
+
+- Certificate ID
+- Common Name (CN)
+- Issuer
+- Valid From Date
+- Expiry Date
+- Subject Alternative Names (SAN)
+- Certificate History
+
+---
+
+## Observation
+
+The search displayed previously issued SSL/TLS certificates related to the target domain along with associated subdomains.
+
+---
+
+## Learning Outcome
+
+- Understood Certificate Transparency Logs.
+- Learned how SSL certificates can reveal subdomains.
+- Practiced passive reconnaissance using publicly available certificate data.
+
+---
+
+# Tools Used
+
+- WHOIS
+- DNSDumpster
+- crt.sh
+- Kali Linux
+- Web Browser
+
+---
+
+# Skills Learned
+
+- Passive Reconnaissance
+- Domain Enumeration
+- WHOIS Analysis
+- DNS Enumeration
+- SSL Certificate Analysis
+- Open-Source Intelligence (OSINT)
+
+---
+
+# Screenshots
+
+All screenshots related to Day 10 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 10, I performed passive reconnaissance using WHOIS, DNSDumpster, and crt.sh to collect publicly available information about a target domain. I learned how to identify domain registration details, DNS records, name servers, mail servers, and SSL/TLS certificate information without directly interacting with the target system. These activities strengthened my understanding of OSINT techniques and domain reconnaissance, which are essential skills in cybersecurity assessments.
