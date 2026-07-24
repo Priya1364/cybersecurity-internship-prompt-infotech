@@ -1,0 +1,140 @@
+# Day 15 – Command Injection Security Analysis in DVWA
+
+## Objective
+
+The objective of Day 15 was to study **Command Injection** vulnerabilities in a controlled laboratory environment using **DVWA (Damn Vulnerable Web Application)**. The exercise focused on understanding how different security levels (Medium and High) implement input validation and defensive mechanisms to reduce the risk of command injection attacks.
+
+> **Ethical Use Notice**
+>
+> This exercise was performed only in an isolated virtual machine using DVWA for educational purposes. No unauthorized systems or public websites were tested.
+
+---
+
+# Assignment
+
+## Analyze Command Injection at Medium and High Security Levels in DVWA
+
+---
+
+# Description
+
+Command Injection is a web application vulnerability that occurs when an application executes operating system commands using unsanitized user input. If proper validation is not implemented, attackers may be able to manipulate application behavior.
+
+In this lab, the focus was on observing how **Medium** and **High** security levels in DVWA improve protection against command injection through better input validation and secure coding practices.
+
+---
+
+# Lab Environment
+
+- Kali Linux
+- DVWA (Damn Vulnerable Web Application)
+- Apache Web Server
+- PHP
+- MySQL
+- Virtual Machine
+
+---
+
+# Procedure
+
+1. Start the DVWA application in the virtual machine.
+2. Log in to the DVWA dashboard.
+3. Navigate to the **Command Injection** module.
+4. Set the DVWA security level to **Medium**.
+5. Observe how the application validates user input.
+6. Record the application's behavior and responses.
+7. Change the security level to **High**.
+8. Repeat the test and compare the application's behavior.
+9. Document the differences between the two security levels.
+
+---
+
+# Observation
+
+## Medium Security
+
+- Basic input validation was implemented.
+- Some potentially unsafe input was filtered.
+- The application showed improved protection compared to the Low security level.
+- Certain invalid inputs were rejected by the application.
+
+---
+
+## High Security
+
+- Stronger input validation and filtering mechanisms were observed.
+- The application applied stricter security controls before processing user input.
+- Defensive coding practices significantly reduced the possibility of unsafe command execution.
+- The overall application security was noticeably improved.
+
+---
+
+# Comparison
+
+| Feature | Medium | High |
+|---------|---------|------|
+| Input Validation | Moderate | Strong |
+| Input Filtering | Basic | Advanced |
+| Security Controls | Improved | Enhanced |
+| Protection Against Command Injection | Better than Low | Strongest among DVWA Levels |
+
+---
+
+# Mitigation Techniques Studied
+
+- Input Validation
+- Input Sanitization
+- Allow-list (Whitelist) Validation
+- Server-side Validation
+- Least Privilege Principle
+- Secure Coding Practices
+- Avoid Direct System Command Execution
+- Logging and Monitoring
+- Web Application Firewall (WAF)
+
+---
+
+# Learning Outcome
+
+- Understood the concept of Command Injection.
+- Learned how different security levels affect application behavior.
+- Studied secure coding practices used to prevent command injection.
+- Improved knowledge of defensive web application security.
+
+---
+
+# Tools Used
+
+- Kali Linux
+- DVWA
+- Apache
+- PHP
+- MySQL
+- Web Browser
+- Virtual Machine
+
+---
+
+# Skills Learned
+
+- Command Injection Awareness
+- Secure Coding Concepts
+- Input Validation
+- Input Sanitization
+- Defensive Security Testing
+- Web Application Security
+- Vulnerability Analysis
+
+---
+
+# Screenshots
+
+All screenshots related to Day 15 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 15, I studied the Command Injection vulnerability using DVWA in a safe and isolated laboratory environment. By comparing the Medium and High security levels, I observed how stronger input validation, filtering mechanisms, and secure coding practices improve application security and reduce the risk of command injection. This exercise strengthened my understanding of secure web application development, defensive testing techniques, and vulnerability mitigation strategies that are essential for cybersecurity professionals.
