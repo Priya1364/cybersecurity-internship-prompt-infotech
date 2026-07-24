@@ -1,0 +1,186 @@
+# Day 11 – Grabify IP Logger Awareness and Load Balancer Basics
+
+## Objective
+
+The objective of Day 11 was to understand how IP logging works for security awareness using **Grabify** in a controlled environment and to learn the basics of **Load Balancers** along with commonly used Linux networking commands for monitoring network connectivity and traffic distribution.
+
+> **Ethical Use Notice**
+>
+> All activities were performed in a controlled laboratory environment using test URLs and test devices. No unauthorized tracking or monitoring of real users was performed.
+
+---
+
+# Assignments
+
+## Assignment 1
+### Work with Grabify Using a Test URL
+
+## Assignment 2
+### Practice Basic Load Balancer Related Commands
+
+---
+
+# Assignment 1 – Grabify IP Logger Awareness
+
+## Description
+
+Grabify is an IP logging tool used to demonstrate how clicking on a specially generated URL can reveal publicly available network information such as the visitor's IP address and browser details. This exercise was conducted only for cybersecurity awareness in an isolated lab environment.
+
+---
+
+## Procedure
+
+1. Open the Grabify website.
+2. Enter a test URL.
+3. Generate a tracking link.
+4. Open the generated link using a test device or virtual machine.
+5. Observe the information collected in the Grabify dashboard.
+
+---
+
+## Information Observed
+
+- Public IP Address
+- Date and Time
+- Browser Information
+- Operating System
+- Device Type
+- Country (Approximate)
+- User Agent
+- Referring URL (if available)
+
+---
+
+## Learning Outcome
+
+- Understood how IP logging works.
+- Learned how attackers may collect publicly available information through phishing links.
+- Recognized the importance of verifying links before clicking them.
+
+---
+
+# Assignment 2 – Load Balancer Basics
+
+## Description
+
+A **Load Balancer** distributes incoming network traffic across multiple servers to improve performance, availability, and reliability. During this task, basic networking commands were used to understand how traffic reaches a server.
+
+---
+
+## Commands Practiced
+
+### Check Network Configuration
+
+```bash
+ip addr
+```
+
+---
+
+### Display Routing Table
+
+```bash
+ip route
+```
+
+---
+
+### Test Network Connectivity
+
+```bash
+ping google.com
+```
+
+---
+
+### Check DNS Resolution
+
+```bash
+nslookup google.com
+```
+
+---
+
+### Display Active Connections
+
+```bash
+ss -tuln
+```
+
+---
+
+### Display Network Statistics
+
+```bash
+netstat -tuln
+```
+
+---
+
+### Trace Network Path
+
+```bash
+traceroute google.com
+```
+
+---
+
+## Basic Load Balancing Types
+
+- Round Robin
+- Least Connections
+- IP Hash
+- Weighted Round Robin
+
+---
+
+## Observation
+
+- Successfully viewed the local network configuration.
+- Verified routing information.
+- Tested internet connectivity.
+- Observed active listening ports.
+- Understood how a load balancer distributes client requests among multiple backend servers.
+
+---
+
+## Learning Outcome
+
+- Learned the purpose of load balancing.
+- Practiced basic Linux networking commands.
+- Understood traffic distribution concepts.
+- Improved troubleshooting skills.
+
+---
+
+# Tools Used
+
+- Grabify (Lab Environment)
+- Kali Linux
+- Linux Terminal
+- Web Browser
+
+---
+
+# Skills Learned
+
+- IP Logging Awareness
+- Social Engineering Awareness
+- Network Troubleshooting
+- Linux Networking Commands
+- Load Balancing Concepts
+- Basic Network Analysis
+
+---
+
+# Screenshots
+
+All screenshots related to Day 11 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 11, I learned how IP logging works through a controlled Grabify demonstration and understood the type of publicly available information that can be exposed when users click untrusted links. I also studied the fundamentals of load balancing and practiced basic Linux networking commands to understand traffic flow and network troubleshooting. These activities enhanced my awareness of social engineering techniques and strengthened my networking fundamentals, which are important skills in cybersecurity.
