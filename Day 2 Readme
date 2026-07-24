@@ -1,0 +1,181 @@
+# Day 2 – DNS, ICMP Analysis and Google Dorking
+
+## Objective
+
+The objective of Day 2 was to understand how DNS and ICMP protocols work by capturing network packets using Wireshark and to learn how Google Dorking can be used for passive information gathering in a safe and ethical manner.
+
+---
+
+# Assignments
+
+## Assignment 4
+### Capture DNS Packets and ICMP Packets Using Wireshark (2 Websites)
+
+## Assignment 5
+### Collect Publicly Available Information from Indian Websites Using Google Dorks
+
+---
+
+# Assignment 4 – Capture DNS and ICMP Packets
+
+## Description
+
+DNS (Domain Name System) translates domain names into IP addresses, while ICMP (Internet Control Message Protocol) is used for network diagnostics such as the **ping** command. This exercise involved capturing DNS and ICMP traffic using Wireshark.
+
+---
+
+## Websites Used
+
+- https://www.google.com
+- https://www.wikipedia.org
+
+---
+
+## Procedure
+
+1. Open Wireshark.
+2. Select the active network interface.
+3. Click **Start Capturing Packets**.
+4. Open Command Prompt.
+5. Ping the selected websites.
+
+Example:
+
+```
+ping google.com
+
+ping wikipedia.org
+```
+
+6. Open both websites in a web browser.
+7. Stop the packet capture.
+
+---
+
+## Wireshark Filters Used
+
+### DNS Packets
+
+```
+dns
+```
+
+### ICMP Packets
+
+```
+icmp
+```
+
+---
+
+## Observation
+
+### DNS
+
+- DNS query packets were sent to resolve the domain names.
+- DNS response packets returned the corresponding IP addresses.
+
+### ICMP
+
+- ICMP Echo Request packets were sent from the client.
+- ICMP Echo Reply packets were received from the destination server.
+- The successful replies confirmed network connectivity.
+
+---
+
+## Learning Outcome
+
+- Understood the purpose of DNS.
+- Learned how domain names are resolved into IP addresses.
+- Learned how ICMP is used for network testing.
+- Practiced filtering packets in Wireshark.
+
+---
+
+# Assignment 5 – Google Dorking
+
+## Description
+
+Google Dorking is an advanced search technique that uses special search operators to locate publicly available information indexed by search engines. During this exercise, only **passive reconnaissance** techniques were used on publicly accessible data.
+
+> **Note:** This activity was performed only for educational purposes using publicly available information. No unauthorized access or exploitation was attempted.
+
+---
+
+## Sample Google Dorks Practiced
+
+```
+site:gov.in
+
+site:nic.in
+
+site:ac.in
+
+site:gov.in filetype:pdf
+
+site:gov.in filetype:xlsx
+
+site:gov.in intitle:index.of
+
+site:gov.in "login"
+
+site:gov.in "admin"
+
+site:gov.in ext:sql
+
+site:gov.in ext:log
+```
+
+---
+
+## Information Collected
+
+- Public PDF documents
+- Public Excel files
+- Login pages
+- Public reports
+- Government portals
+- Educational institution websites
+
+---
+
+## Learning Outcome
+
+- Learned the basics of Google Dorking.
+- Understood passive information gathering techniques.
+- Practiced using advanced Google search operators.
+- Understood the importance of protecting sensitive information from search engine indexing.
+
+---
+
+# Tools Used
+
+- Wireshark
+- Windows Command Prompt
+- Google Search
+- Web Browser
+
+---
+
+# Skills Learned
+
+- DNS Packet Analysis
+- ICMP Packet Analysis
+- Packet Filtering
+- Passive Reconnaissance
+- Google Dorking
+- Information Gathering
+
+---
+
+# Screenshots
+
+All screenshots for Day 2 are included in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 2, I explored two important networking protocols, DNS and ICMP, by capturing and analyzing their packets using Wireshark. I also learned the fundamentals of passive information gathering through Google Dorking using publicly available search operators. These activities improved my understanding of network communication and ethical reconnaissance techniques, which are essential skills in cybersecurity.
