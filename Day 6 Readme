@@ -1,0 +1,265 @@
+# Day 6 – VirusTotal, CyberChef, Shodan and Kali Linux
+
+## Objective
+
+The objective of Day 6 was to become familiar with commonly used cybersecurity tools for malware analysis, data transformation, information gathering, and Linux-based security testing. The tasks focused on understanding how these tools work and practicing their basic features in a safe and ethical manner.
+
+---
+
+# Assignments
+
+## Assignment 1
+### Explore VirusTotal
+
+## Assignment 2
+### Explore CyberChef
+
+## Assignment 3
+### Explore Shodan
+
+## Assignment 4
+### Perform Basic Operations in Kali Linux
+
+---
+
+# Assignment 1 – VirusTotal
+
+## Description
+
+VirusTotal is an online threat intelligence platform that scans files, URLs, domains, and IP addresses using multiple antivirus engines. It helps identify malicious content and provides detailed security analysis.
+
+---
+
+## Procedure
+
+1. Open the VirusTotal website.
+2. Upload a sample file or enter a public URL.
+3. Start the scan.
+4. Review the detection results.
+5. Observe additional information such as:
+   - Detection ratio
+   - File hash values
+   - Community comments
+   - File behavior
+   - Vendor analysis
+
+---
+
+## Features Explored
+
+- File Scan
+- URL Scan
+- IP Address Lookup
+- Domain Lookup
+- Hash Lookup
+- Detection Summary
+- Community Reports
+
+---
+
+## Learning Outcome
+
+- Understood malware reputation analysis.
+- Learned how antivirus engines detect suspicious files.
+- Explored threat intelligence reports.
+
+---
+
+# Assignment 2 – CyberChef
+
+## Description
+
+CyberChef is a web-based toolkit used for encoding, decoding, encryption, hashing, data conversion, and forensic analysis.
+
+---
+
+## Tasks Performed
+
+- Base64 Encode
+- Base64 Decode
+- URL Encode
+- URL Decode
+- MD5 Hash
+- SHA-256 Hash
+- Hex Conversion
+- ROT13 Encoding
+
+---
+
+## Procedure
+
+1. Open CyberChef.
+2. Enter sample text.
+3. Select the required operation.
+4. Observe the output.
+5. Experiment with multiple recipes.
+
+---
+
+## Learning Outcome
+
+- Learned data encoding and decoding.
+- Understood hashing techniques.
+- Practiced data transformation operations.
+
+---
+
+# Assignment 3 – Shodan
+
+## Description
+
+Shodan is a search engine that indexes internet-connected devices. It helps security professionals identify exposed services and publicly accessible systems.
+
+> **Note:** Only passive searches were performed for educational purposes. No unauthorized interaction with discovered systems was attempted.
+
+---
+
+## Information Explored
+
+- Public IP addresses
+- Open ports
+- Running services
+- Server banners
+- SSL information
+- Geographic location
+- Organization details
+
+---
+
+## Sample Search Queries
+
+```
+apache
+
+nginx
+
+port:80
+
+port:443
+
+country:IN
+
+product:Apache
+```
+
+---
+
+## Learning Outcome
+
+- Understood internet-wide device discovery.
+- Learned passive reconnaissance techniques.
+- Explored publicly available service information.
+
+---
+
+# Assignment 4 – Kali Linux Practice
+
+## Description
+
+Practiced basic Linux commands in Kali Linux to improve command-line skills and system navigation.
+
+---
+
+## Commands Practiced
+
+### File System
+
+```bash
+pwd
+ls
+cd
+mkdir
+rmdir
+touch
+cp
+mv
+rm
+```
+
+### File Viewing
+
+```bash
+cat
+less
+nano
+```
+
+### User Information
+
+```bash
+whoami
+id
+hostname
+```
+
+### Networking
+
+```bash
+ip addr
+ping
+ifconfig
+netstat
+ss
+```
+
+### Process Management
+
+```bash
+ps
+top
+kill
+```
+
+### System Information
+
+```bash
+uname -a
+history
+clear
+```
+
+---
+
+## Learning Outcome
+
+- Improved Linux command-line skills.
+- Learned system navigation.
+- Practiced networking and process management.
+- Became comfortable using the Kali Linux terminal.
+
+---
+
+# Tools Used
+
+- VirusTotal
+- CyberChef
+- Shodan
+- Kali Linux
+- Linux Terminal
+- Web Browser
+
+---
+
+# Skills Learned
+
+- Malware Analysis
+- Threat Intelligence
+- Data Encoding and Decoding
+- Hash Analysis
+- Passive Reconnaissance
+- Linux Fundamentals
+- Command-Line Operations
+
+---
+
+# Screenshots
+
+All screenshots related to Day 6 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 6, I explored four essential cybersecurity tools: VirusTotal, CyberChef, Shodan, and Kali Linux. I learned how to analyze files and URLs using VirusTotal, perform data transformations with CyberChef, gather publicly available information using Shodan, and practice fundamental Linux commands in Kali Linux. These activities strengthened my understanding of threat intelligence, information gathering, and Linux administration, which are important skills for cybersecurity professionals.
