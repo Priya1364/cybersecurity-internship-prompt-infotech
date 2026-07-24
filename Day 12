@@ -1,0 +1,243 @@
+# Day 12 – TCP/IP, API Response Codes, Web Enumeration and Vulnerability Analysis
+
+## Objective
+
+The objective of Day 12 was to strengthen networking fundamentals by studying the **TCP/IP model**, commonly used protocols and port numbers, understanding **HTTP API response codes**, performing **web enumeration** using security tools, and learning how to identify publicly disclosed vulnerabilities using **CVE**, **CWE**, and **CVSS**.
+
+> **Ethical Use Notice**
+>
+> All enumeration activities were performed only on authorized laboratory environments or intentionally vulnerable applications for educational purposes.
+
+---
+
+# Assignments
+
+## Assignment 1
+### Study TCP/IP Layers, Common Protocols and Port Numbers
+
+## Assignment 2
+### Learn Common HTTP API Response Codes
+
+## Assignment 3
+### Perform Web Enumeration and Vulnerability Analysis
+
+---
+
+# Assignment 1 – TCP/IP Layers and Protocols
+
+## Description
+
+The TCP/IP model is the foundation of modern computer networking. It defines how data is transmitted between devices over a network.
+
+---
+
+## TCP/IP Layers
+
+| Layer | Purpose |
+|--------|---------|
+| Application Layer | Provides network services to user applications. |
+| Transport Layer | Ensures reliable communication using TCP or UDP. |
+| Internet Layer | Handles IP addressing and routing. |
+| Network Access Layer | Transmits data over the physical network. |
+
+---
+
+## Common Protocols and Port Numbers
+
+| Protocol | Port | Purpose |
+|----------|------|---------|
+| FTP | 21 | File Transfer |
+| SSH | 22 | Secure Remote Login |
+| Telnet | 23 | Remote Login |
+| SMTP | 25 | Email Transfer |
+| DNS | 53 | Domain Name Resolution |
+| DHCP | 67/68 | Dynamic IP Assignment |
+| HTTP | 80 | Web Communication |
+| POP3 | 110 | Email Retrieval |
+| IMAP | 143 | Email Access |
+| HTTPS | 443 | Secure Web Communication |
+| SMB | 445 | File Sharing |
+| RDP | 3389 | Remote Desktop |
+
+---
+
+## Learning Outcome
+
+- Understood the TCP/IP architecture.
+- Learned common networking protocols.
+- Studied frequently used port numbers.
+
+---
+
+# Assignment 2 – Common HTTP Response Codes
+
+## Description
+
+HTTP response codes indicate the result of a client's request to a web server. They help developers and security professionals understand server responses during testing.
+
+---
+
+## Common Response Codes
+
+| Code | Meaning |
+|------|---------|
+| 200 | OK |
+| 201 | Created |
+| 301 | Moved Permanently |
+| 302 | Found (Temporary Redirect) |
+| 400 | Bad Request |
+| 401 | Unauthorized |
+| 403 | Forbidden |
+| 404 | Not Found |
+| 500 | Internal Server Error |
+| 503 | Service Unavailable |
+
+---
+
+## Learning Outcome
+
+- Learned common HTTP status codes.
+- Understood how API responses indicate success or failure.
+- Improved web application testing knowledge.
+
+---
+
+# Assignment 3 – Web Enumeration and Vulnerability Analysis
+
+## Description
+
+Web enumeration is the process of discovering publicly accessible resources such as directories, files, and services. The results can then be compared with publicly disclosed vulnerabilities for awareness and remediation.
+
+---
+
+## Tools Used
+
+### Nmap
+
+Used to identify open ports and running services.
+
+Example:
+
+```bash
+nmap <target-ip>
+```
+
+---
+
+### DIRB
+
+Used to discover hidden directories.
+
+Example:
+
+```bash
+dirb http://<target-ip>
+```
+
+---
+
+### Dirsearch
+
+Used for directory and file enumeration.
+
+Example:
+
+```bash
+dirsearch -u http://<target-ip>
+```
+
+---
+
+### Uniscan
+
+Used to perform basic web security enumeration.
+
+Example:
+
+```bash
+uniscan -u http://<target-ip>
+```
+
+---
+
+## Vulnerability References
+
+After identifying software or services, publicly available vulnerability databases were used for research.
+
+### CVE
+
+**Common Vulnerabilities and Exposures**
+
+Provides unique identifiers for publicly disclosed security vulnerabilities.
+
+---
+
+### CWE
+
+**Common Weakness Enumeration**
+
+Describes common software weakness categories.
+
+---
+
+### CVSS
+
+**Common Vulnerability Scoring System**
+
+Measures the severity of a vulnerability using a standardized score.
+
+---
+
+## Observation
+
+- Identified publicly accessible web resources.
+- Observed open network ports.
+- Reviewed software version information.
+- Studied publicly available CVE, CWE, and CVSS information related to identified software.
+
+---
+
+## Learning Outcome
+
+- Learned basic web enumeration techniques.
+- Understood the purpose of vulnerability databases.
+- Improved knowledge of vulnerability identification and risk assessment.
+
+---
+
+# Tools Used
+
+- Kali Linux
+- Nmap
+- DIRB
+- Dirsearch
+- Uniscan
+- Web Browser
+
+---
+
+# Skills Learned
+
+- TCP/IP Fundamentals
+- HTTP Response Codes
+- Web Enumeration
+- Directory Discovery
+- Port Scanning
+- Vulnerability Research
+- CVE Analysis
+- CWE Classification
+- CVSS Scoring
+
+---
+
+# Screenshots
+
+All screenshots related to Day 12 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 12, I strengthened my understanding of networking by studying the TCP/IP model, common protocols, and port numbers. I also learned the meaning of frequently used HTTP response codes and performed web enumeration using tools such as Nmap, DIRB, Dirsearch, and Uniscan in an authorized lab environment. Finally, I explored the concepts of CVE, CWE, and CVSS to understand how publicly disclosed vulnerabilities are identified, classified, and assessed based on their severity. These activities enhanced my knowledge of network communication, web application testing, and vulnerability assessment.
