@@ -1,0 +1,115 @@
+# Day 8 – Social Engineering Awareness Using SEToolkit
+
+## Objective
+
+The objective of Day 8 was to understand the concepts of **social engineering** and **credential harvesting awareness** using the Social-Engineer Toolkit (SEToolkit) in a **controlled laboratory environment**. The exercise focused on learning how phishing attacks work so that organizations can better defend against them.
+
+> **Ethical Use Notice**
+>
+> This activity was performed **only in an isolated lab environment** using virtual machines and test accounts created for educational purposes. No real users, public websites, or unauthorized systems were targeted.
+
+---
+
+# Scenario
+
+You are working as a **Web Application Security Tester** in **XYZ Company**.
+
+The security team wants to evaluate employee awareness against phishing attacks. A simulated login page is created in a controlled lab environment using SEToolkit to demonstrate how attackers may attempt credential harvesting.
+
+The objective is to understand the attack workflow and identify appropriate security controls to defend against such attacks.
+
+---
+
+# Assignment
+
+### Simulate a Phishing Awareness Exercise Using SEToolkit
+
+---
+
+# Description
+
+The **Social-Engineer Toolkit (SEToolkit)** is an open-source penetration testing framework designed to demonstrate social engineering attacks in authorized security assessments and awareness training.
+
+For this exercise, SEToolkit was used to create a simulated phishing page inside an isolated lab to understand how credential harvesting attacks work.
+
+---
+
+# Lab Environment
+
+- Kali Linux (Virtual Machine)
+- Test HTTP Website
+- Virtual Network
+- Test User Accounts
+- No Internet-facing Systems
+
+---
+
+# Procedure
+
+1. Started the Kali Linux virtual machine.
+2. Opened the terminal.
+3. Launched the Social-Engineer Toolkit.
+4. Selected the credential harvesting demonstration module.
+5. Configured the phishing page for the lab environment.
+6. Accessed the simulated page using a test client within the virtual network.
+7. Submitted sample test credentials.
+8. Observed how the submitted information was recorded by the demonstration server.
+9. Closed the simulation after verifying the results.
+
+---
+
+# Observation
+
+During the controlled simulation:
+
+- The phishing page resembled a normal login page.
+- Test credentials entered into the page were captured within the lab environment.
+- The exercise demonstrated how attackers may attempt to collect user credentials through deceptive websites.
+- The activity highlighted the importance of verifying website authenticity before entering sensitive information.
+
+---
+
+# Security Awareness
+
+The exercise reinforced several cybersecurity best practices:
+
+- Verify website URLs before logging in.
+- Check for HTTPS and valid certificates.
+- Avoid clicking suspicious links received through email or messages.
+- Enable Multi-Factor Authentication (MFA).
+- Report suspicious websites to the security team.
+- Participate in regular phishing awareness training.
+
+---
+
+# Tools Used
+
+- Kali Linux
+- Social-Engineer Toolkit (SEToolkit)
+- Virtual Machine
+- Linux Terminal
+
+---
+
+# Skills Learned
+
+- Social Engineering Awareness
+- Phishing Attack Simulation
+- Credential Harvesting Concepts
+- Security Awareness
+- Safe Lab Practices
+- Kali Linux Basics
+
+---
+
+# Screenshots
+
+All screenshots related to Day 8 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 8, I learned how social engineering attacks, particularly phishing and credential harvesting, can be demonstrated safely using the Social-Engineer Toolkit (SEToolkit) in a controlled laboratory environment. This exercise increased my awareness of phishing techniques and emphasized the importance of user education, secure authentication practices, and ethical cybersecurity testing. It also reinforced the principle that security tools should only be used in authorized environments for educational and defensive purposes.
