@@ -1,0 +1,156 @@
+# Day 1 – Wireshark Basics and Network Fundamentals
+
+## Objective
+
+The objective of Day 1 was to understand basic network communication by analyzing packets using Wireshark, learn how web traffic works through common ports, and become familiar with widely used network protocols and their port numbers.
+
+---
+
+# Assignments
+
+## Assignment 1
+### Capture TCP Three-Way Handshake in Wireshark
+
+## Assignment 2
+### Block Ports 80 and 443 on the System and Observe Browser Behavior
+
+## Assignment 3
+### Collect 20 Commonly Used Protocols and Their Port Numbers
+
+---
+
+# Assignment 1 – Capture TCP Three-Way Handshake
+
+## Description
+
+TCP (Transmission Control Protocol) establishes a reliable connection before transmitting data. This process is called the **Three-Way Handshake** and consists of three packets exchanged between the client and server.
+
+### Steps Performed
+
+1. Opened Wireshark.
+2. Selected the active network interface.
+3. Started packet capture.
+4. Opened a web browser and visited a website.
+5. Applied the filter:
+
+```
+tcp
+```
+
+6. Observed the TCP handshake packets.
+
+### TCP Three-Way Handshake
+
+```
+Client                     Server
+
+SYN --------------------->
+
+     <------------------ SYN, ACK
+
+ACK --------------------->
+```
+
+### Observation
+
+The captured packets showed:
+
+- SYN packet sent from the client.
+- SYN-ACK response from the server.
+- ACK packet sent by the client.
+
+This confirms that a TCP connection was successfully established.
+
+### Learning Outcome
+
+- Understood how TCP creates a reliable connection.
+- Learned how to identify handshake packets using Wireshark.
+- Practiced packet filtering.
+
+---
+
+# Assignment 2 – Block Ports 80 and 443
+
+## Description
+
+HTTP uses Port **80** and HTTPS uses Port **443**. Blocking these ports prevents browsers from communicating with web servers.
+
+### Steps Performed
+
+1. Identified Ports 80 and 443.
+2. Blocked both ports using the system firewall.
+3. Opened a browser.
+4. Tried accessing multiple websites.
+5. Observed the browser behavior.
+
+### Observation
+
+- Websites failed to load.
+- Browser displayed connection timeout or unable to connect messages.
+- HTTP and HTTPS traffic was blocked successfully.
+
+### Learning Outcome
+
+- Understood the importance of firewall rules.
+- Learned how web communication depends on Ports 80 and 443.
+- Observed the effect of blocking network ports.
+
+---
+
+# Assignment 3 – Common Protocols and Port Numbers
+
+| Protocol | Port | Purpose |
+|----------|------|---------|
+| FTP | 20 | Data Transfer |
+| FTP | 21 | Control Connection |
+| SSH | 22 | Secure Remote Login |
+| Telnet | 23 | Remote Login |
+| SMTP | 25 | Email Sending |
+| DNS | 53 | Domain Name Resolution |
+| DHCP | 67 | Server Port |
+| DHCP | 68 | Client Port |
+| TFTP | 69 | File Transfer |
+| HTTP | 80 | Web Browsing |
+| POP3 | 110 | Receive Email |
+| NTP | 123 | Time Synchronization |
+| IMAP | 143 | Email Access |
+| SNMP | 161 | Network Management |
+| LDAP | 389 | Directory Services |
+| HTTPS | 443 | Secure Web Browsing |
+| SMB | 445 | File Sharing |
+| SMTPS | 465 | Secure Email |
+| RDP | 3389 | Remote Desktop |
+| MySQL | 3306 | Database Service |
+
+---
+
+# Tools Used
+
+- Wireshark
+- Web Browser
+- Windows Firewall
+
+---
+
+# Skills Learned
+
+- TCP Three-Way Handshake
+- Packet Capturing
+- Packet Filtering
+- Firewall Basics
+- Common Network Ports
+- Network Protocol Identification
+
+---
+
+# Screenshots
+
+All screenshots related to Day 1 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 1, I learned the fundamentals of TCP communication, captured the TCP Three-Way Handshake using Wireshark, understood the role of HTTP and HTTPS ports by blocking Ports 80 and 443, and studied commonly used networking protocols with their respective port numbers. These activities provided a strong foundation in networking and packet analysis, which are essential skills in cybersecurity.
