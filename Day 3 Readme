@@ -1,0 +1,186 @@
+# Day 3 – Network Configuration and HTTP Packet Analysis
+
+## Objective
+
+The objective of Day 3 was to understand the difference between **NAT** and **Bridged** network modes in a virtual machine and to capture HTTP login traffic using Wireshark for educational analysis in a controlled lab environment.
+
+---
+
+# Assignments
+
+## Assignment 6
+### Change Network Adapter from NAT to Bridged and Observe the Difference in Ping
+
+## Assignment 7
+### Capture HTTP Login Traffic Using Wireshark on a Vulnerable Web Application
+
+---
+
+# Assignment 6 – Change Network from NAT to Bridged
+
+## Description
+
+Virtual machines can communicate with networks using different networking modes. In this task, the network adapter was changed from **NAT (Network Address Translation)** to **Bridged Adapter**, and the difference in network connectivity was observed using the `ping` command.
+
+---
+
+## Network Modes
+
+### NAT (Network Address Translation)
+
+- VM shares the host computer's network.
+- VM receives a private IP address.
+- Safer for isolated testing.
+- Commonly used for cybersecurity labs.
+
+### Bridged Adapter
+
+- VM connects directly to the physical network.
+- VM receives an IP address from the router.
+- Appears as a separate device on the network.
+- Useful for communication with other devices on the same network.
+
+---
+
+## Procedure
+
+1. Shut down the virtual machine.
+2. Open VMware/VirtualBox settings.
+3. Select **Network Adapter**.
+4. Change the adapter from **NAT** to **Bridged**.
+5. Start the virtual machine.
+6. Open the terminal or Command Prompt.
+7. Check the IP address.
+
+Example:
+
+```bash
+ip addr
+```
+
+or
+
+```cmd
+ipconfig
+```
+
+8. Test network connectivity.
+
+```bash
+ping google.com
+```
+
+---
+
+## Observation
+
+### NAT Mode
+
+- VM received a private IP address.
+- Internet access worked successfully.
+- Network communication was routed through the host machine.
+
+### Bridged Mode
+
+- VM received an IP address from the local router.
+- VM appeared as an independent device on the network.
+- Ping requests were successful.
+
+---
+
+## Learning Outcome
+
+- Understood the difference between NAT and Bridged networking.
+- Learned how virtual machine networking works.
+- Practiced verifying network connectivity using the ping command.
+
+---
+
+# Assignment 7 – Capture HTTP Login Traffic Using Wireshark
+
+## Description
+
+HTTP is an unencrypted protocol that sends data in plain text. This task involved capturing HTTP traffic generated during a login attempt on a vulnerable web application in a safe and isolated lab environment.
+
+> **Note:** The capture was performed only on a deliberately vulnerable application running in a local virtual machine for educational purposes.
+
+---
+
+## Procedure
+
+1. Start Wireshark.
+2. Select the active network interface.
+3. Start packet capture.
+4. Open the vulnerable HTTP website in the browser.
+5. Navigate to the login page.
+6. Enter sample test credentials.
+7. Submit the login form.
+8. Stop packet capture.
+
+---
+
+## Wireshark Filter Used
+
+```
+http
+```
+
+Additional filters:
+
+```
+tcp.port == 80
+```
+
+---
+
+## Observation
+
+- HTTP GET requests were captured.
+- HTTP POST requests containing login data were observed.
+- HTTP headers such as Host, User-Agent, and Content-Type were visible.
+- Since HTTP does not encrypt traffic, transmitted data can be inspected in packet captures.
+
+---
+
+## Learning Outcome
+
+- Understood the difference between HTTP and HTTPS.
+- Learned how HTTP requests are transmitted.
+- Practiced capturing and filtering HTTP packets using Wireshark.
+- Recognized the importance of using HTTPS to protect sensitive information.
+
+---
+
+# Tools Used
+
+- VMware Workstation / VirtualBox
+- Kali Linux
+- Wireshark
+- Web Browser
+- Command Prompt / Terminal
+
+---
+
+# Skills Learned
+
+- NAT Networking
+- Bridged Networking
+- IP Address Verification
+- Ping Command
+- HTTP Packet Analysis
+- Wireshark Packet Capture
+- Basic Network Troubleshooting
+
+---
+
+# Screenshots
+
+All screenshots related to Day 3 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 3, I learned how different virtual machine networking modes affect communication and connectivity by comparing NAT and Bridged adapters. I also captured and analyzed HTTP traffic from a vulnerable web application using Wireshark in a controlled lab environment. These practical exercises improved my understanding of virtual networking, packet analysis, and the importance of secure communication protocols in cybersecurity.
