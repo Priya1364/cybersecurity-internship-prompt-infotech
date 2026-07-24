@@ -1,0 +1,158 @@
+# Day 9 – Information Gathering Using LeakIX and Maltego
+
+## Objective
+
+The objective of Day 9 was to learn passive reconnaissance techniques using **LeakIX** and **Maltego**. The tasks focused on collecting publicly available information about a target domain, including subdomains, DNS records, mail servers, IP addresses, and other metadata without performing any unauthorized interaction.
+
+> **Ethical Use Notice**
+>
+> All activities were conducted for educational purposes using publicly available information and authorized practice targets. No unauthorized access, exploitation, or active attacks were performed.
+
+---
+
+# Assignments
+
+## Assignment 1
+### Perform Information Gathering Using LeakIX
+
+## Assignment 2
+### Install Maltego and Perform a Domain Investigation
+
+---
+
+# Assignment 1 – LeakIX Information Gathering
+
+## Description
+
+LeakIX is an online search engine that indexes publicly accessible services and exposed information on the Internet. It helps security professionals identify publicly available information related to domains, IP addresses, and services.
+
+---
+
+## Procedure
+
+1. Open the LeakIX website.
+2. Search for the target domain.
+3. Review the available information.
+4. Record publicly available findings.
+
+---
+
+## Information Collected
+
+- Domain Name
+- IP Address
+- Open Services
+- HTTP Banner Information
+- SSL Certificate Details
+- Server Information
+- Exposed Public Services (if available)
+
+---
+
+## Learning Outcome
+
+- Understood passive reconnaissance techniques.
+- Learned how exposed services can be identified.
+- Improved knowledge of open-source intelligence (OSINT).
+
+---
+
+# Assignment 2 – Maltego Domain Investigation
+
+## Description
+
+Maltego is an Open-Source Intelligence (OSINT) and link analysis tool that helps visualize relationships between domains, subdomains, IP addresses, DNS records, organizations, and other publicly available information.
+
+---
+
+## Procedure
+
+1. Install Maltego Community Edition.
+2. Launch the application.
+3. Create a new investigation graph.
+4. Add the target domain.
+5. Run the available transforms.
+6. Analyze the discovered entities and relationships.
+
+---
+
+## Information Gathered
+
+The following information was collected from publicly available sources:
+
+- Target Domain
+- Subdomains
+- Name Servers (NS Records)
+- Mail Servers (MX Records)
+- IP Addresses
+- DNS Information
+- WHOIS Details
+- Related Domains (if available)
+
+---
+
+## Investigation Flow
+
+```
+Target Domain
+      │
+      ├── Subdomains
+      │
+      ├── Name Servers
+      │
+      ├── Mail Servers
+      │
+      ├── IP Addresses
+      │
+      └── DNS Records
+```
+
+---
+
+## Observation
+
+The investigation successfully identified several publicly available records associated with the selected domain. Maltego displayed the relationships between entities in a graphical format, making it easier to understand the target's publicly exposed infrastructure.
+
+---
+
+## Learning Outcome
+
+- Learned the basics of OSINT investigations.
+- Understood domain relationship mapping.
+- Practiced passive information gathering.
+- Improved visualization of network infrastructure.
+
+---
+
+# Tools Used
+
+- LeakIX
+- Maltego Community Edition
+- Kali Linux / Windows
+- Web Browser
+
+---
+
+# Skills Learned
+
+- Open-Source Intelligence (OSINT)
+- Passive Reconnaissance
+- Domain Enumeration
+- Subdomain Discovery
+- DNS Analysis
+- Infrastructure Mapping
+- Information Gathering
+
+---
+
+# Screenshots
+
+All screenshots related to Day 9 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 9, I performed passive information gathering using LeakIX and Maltego. I learned how to identify publicly available information such as subdomains, DNS records, mail servers, IP addresses, and server details without interacting directly with the target systems. These exercises strengthened my understanding of Open-Source Intelligence (OSINT), passive reconnaissance, and infrastructure mapping, which are important components of cybersecurity assessments.
