@@ -1,0 +1,187 @@
+# Day 5 – OWASP Top 10 and TryHackMe Linux Fundamentals
+
+## Objective
+
+The objective of Day 5 was to understand the **OWASP Top 10 Web Application Security Risks** and complete the **TryHackMe Linux Fundamentals Pathway** to strengthen basic Linux skills required for cybersecurity and penetration testing.
+
+---
+
+# Assignments
+
+## Assignment 1
+### Study OWASP Top 10 Web Application Security Risks
+
+## Assignment 2
+### Complete TryHackMe Linux Fundamentals Pathway
+
+---
+
+# Assignment 1 – OWASP Top 10
+
+## Description
+
+The **OWASP (Open Worldwide Application Security Project) Top 10** is a standard awareness document that identifies the most critical security risks affecting web applications. It helps developers and security professionals understand common vulnerabilities and how to prevent them.
+
+---
+
+## OWASP Top 10 (2021)
+
+| No. | Vulnerability | Description |
+|-----|---------------|-------------|
+| A01 | Broken Access Control | Users can access resources or perform actions beyond their permissions. |
+| A02 | Cryptographic Failures | Weak or improper encryption exposes sensitive information. |
+| A03 | Injection | Malicious input is interpreted as commands or queries (e.g., SQL Injection). |
+| A04 | Insecure Design | Security weaknesses caused by poor application design. |
+| A05 | Security Misconfiguration | Incorrect security settings expose systems to attacks. |
+| A06 | Vulnerable and Outdated Components | Using software with known vulnerabilities. |
+| A07 | Identification and Authentication Failures | Weak authentication mechanisms allow unauthorized access. |
+| A08 | Software and Data Integrity Failures | Untrusted software updates or insecure CI/CD pipelines. |
+| A09 | Security Logging and Monitoring Failures | Lack of proper logging and monitoring delays attack detection. |
+| A10 | Server-Side Request Forgery (SSRF) | The server is tricked into making unauthorized requests to internal or external resources. |
+
+---
+
+## Learning Outcome
+
+- Understood the most common web application vulnerabilities.
+- Learned the importance of secure coding and secure configuration.
+- Gained awareness of common attack techniques and mitigation strategies.
+
+---
+
+# Assignment 2 – TryHackMe Linux Fundamentals
+
+## Description
+
+Completed the **TryHackMe Linux Fundamentals Pathway** to gain practical knowledge of Linux commands, file system navigation, user management, and permissions.
+
+---
+
+## Topics Covered
+
+- Linux File System
+- Basic Terminal Commands
+- Directory Navigation
+- File Management
+- User and Group Management
+- File Permissions
+- Package Management
+- Processes and Services
+- Networking Commands
+- Shell Basics
+
+---
+
+## Common Linux Commands Practiced
+
+### Navigation
+
+```bash
+pwd
+ls
+cd
+tree
+```
+
+### File Management
+
+```bash
+touch
+cp
+mv
+rm
+mkdir
+rmdir
+cat
+less
+nano
+```
+
+### File Permissions
+
+```bash
+chmod
+chown
+```
+
+### User Management
+
+```bash
+whoami
+id
+sudo
+passwd
+```
+
+### Networking
+
+```bash
+ping
+ifconfig
+ip addr
+netstat
+ss
+```
+
+### Process Management
+
+```bash
+ps
+top
+kill
+```
+
+---
+
+## Procedure
+
+1. Logged into the TryHackMe platform.
+2. Opened the Linux Fundamentals learning path.
+3. Completed all learning modules and practical exercises.
+4. Practiced Linux commands in the provided virtual machine.
+5. Verified command outputs and completed the rooms successfully.
+
+---
+
+## Learning Outcome
+
+- Improved Linux command-line skills.
+- Learned Linux file system structure.
+- Understood file permissions and ownership.
+- Practiced essential networking and process management commands.
+- Built a strong foundation for cybersecurity and penetration testing.
+
+---
+
+# Tools Used
+
+- TryHackMe
+- Kali Linux
+- Linux Terminal
+- Web Browser
+
+---
+
+# Skills Learned
+
+- Linux Fundamentals
+- Command Line Interface (CLI)
+- File System Navigation
+- User and Permission Management
+- Basic Networking
+- Web Application Security
+- OWASP Top 10 Awareness
+
+---
+
+# Screenshots
+
+All screenshots related to Day 5 are available in:
+
+**Internship-Screenshots.pdf**
+
+---
+
+# Conclusion
+
+On Day 5, I studied the OWASP Top 10 Web Application Security Risks to understand the most critical vulnerabilities affecting web applications. I also completed the TryHackMe Linux Fundamentals Pathway, where I practiced essential Linux commands, file system navigation, permissions, and networking concepts. These activities strengthened my understanding of both secure web application practices and Linux administration, which are fundamental skills in cybersecurity.
